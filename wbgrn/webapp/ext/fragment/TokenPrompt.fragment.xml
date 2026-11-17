@@ -1,0 +1,17 @@
+<!-- webapp/ext/fragment/TokenPrompt.fragment.xml -->
+<core:FragmentDefinition xmlns="sap.m" xmlns:core="sap.ui.core">
+    <Dialog title="Fetch by Token" contentWidth="350px">
+        <content>
+            <VBox class="sapUiSmallMargin">
+                <Label text="Token Number" />
+                <Input id="tokenPromptInput" placeholder="e.g. TKN0001" />
+                <Text id="folderStatusText" text="No folder connected" class="sapUiTinyMarginTop" />
+            </VBox>
+        </content>
+        <buttons>
+            <Button text="Connect Folder" press=".onConnectFolder" />
+            <Button text="Fetch &amp; Upload" type="Emphasized" press=".onConfirmFetchByToken" />
+            <Button text="Cancel" press=".onCancelTokenPrompt" />
+        </buttons>
+    </Dialog>
+</core:FragmentDefinition>
